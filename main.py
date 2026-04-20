@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Optional
@@ -47,7 +46,6 @@ def delete_student(student_id: int):
             del students[index]
             return {"message": "Student deleted successfully"}
     return {"message": "Student not found"}
-=======
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Optional
@@ -73,5 +71,3 @@ def create_student(student: Student):
 @app.get("/students")
 def get_students():
     return {"students": students}
-
->>>>>>> 227fe1d5625ba1d875a71388af24c18b09b75483
